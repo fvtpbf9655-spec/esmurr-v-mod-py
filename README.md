@@ -26,7 +26,9 @@ Dasselbe Notebook läuft unverändert auch in einem lokalen Jupyter.
 
 1. **Module importieren** – alle Imports gebündelt in einer Zelle
 2. **Versuchsaufbau und Pipettierschema** – Konfiguration des Plattenblocks
-3. **Rohdaten einlesen** – Plattenraster aus dem Tecan-Export
+3. **Rohdaten einlesen** – Plattenraster aus dem Tecan-Export; erkennt automatisch
+   normales Raster, transponiertes Raster und Listenformat (Wellnamen wie `A1`),
+   durchsucht alle Tabellenblätter und zeigt bei Problemen den Aufbau der Datei
 4. **Wells den Konditionen zuordnen** – nach Pipettierschema (Skript S. 28, Abb. 7/8)
 5. **Mittelwerte und Streuung** der Triplikate, inkl. Prüfung auf auffällige Replikate
 6. **Normierung** auf den unstimulierten Leervektor (pcDps, 0 M)
