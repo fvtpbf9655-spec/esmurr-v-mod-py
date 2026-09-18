@@ -16,6 +16,12 @@ MC4 Rezeptors (Praktikum V526, Institut für Zellbiologie, HHU Düsseldorf).
 2. Das Notebook **und** die Excel-Datei per Drag & Drop in den Dateibrowser links ziehen.
    Die Excel-Datei kann direkt neben dem Notebook oder in einem Unterordner `daten/`
    liegen – beides wird gefunden.
+
+   Gebraucht wird der **Lumineszenz-Export des Reportergen-Assays** (384-Well,
+   16 Zeilen × 24 Spalten). Liegen mehrere Excel-Dateien im Dateibrowser, wählt das
+   Notebook anhand des *Inhalts* die passende aus und listet auf, was es geprüft hat –
+   der 96-Well-Export des Oberflächen-ELISA aus Versuch 2 wird dabei erkannt und
+   übersprungen.
 3. Notebook öffnen und *Run → Run All Cells* ausführen.
 
 Es wird **nichts nachinstalliert**: `numpy`, `pandas`, `scipy` und `matplotlib` bringt
