@@ -18,13 +18,16 @@ MC4 Rezeptors (Praktikum V526, Institut für Zellbiologie, HHU Düsseldorf).
    liegen – beides wird gefunden.
 3. Notebook öffnen und *Run → Run All Cells* ausführen.
 
-Die erste Code-Zelle installiert `openpyxl` bei Bedarf automatisch nach
-(`piplite`); `numpy`, `pandas`, `scipy` und `matplotlib` bringt JupyterLite bereits mit.
-Dasselbe Notebook läuft unverändert auch in einem lokalen Jupyter.
+Es wird **nichts nachinstalliert**: `numpy`, `pandas`, `scipy` und `matplotlib` bringt
+JupyterLite bereits mit, und die Excel-Datei wird allein mit der Standardbibliothek
+gelesen (eine `.xlsx`-Datei ist ein ZIP-Archiv mit XML-Dateien). `openpyxl` wird nicht
+benötigt. Dadurch gibt es keine Abhängigkeit, die beim Start fehlschlagen kann, und
+dasselbe Notebook läuft unverändert auch in einem lokalen Jupyter.
 
 ## Aufbau des Notebooks
 
-1. **Module importieren** – alle Imports gebündelt in einer Zelle
+1. **Module importieren** – alle Imports gebündelt in einer Zelle, ohne
+   Nachinstallation und ohne `await`
 2. **Versuchsaufbau und Pipettierschema** – Konfiguration des Plattenblocks
 3. **Rohdaten einlesen** – Plattenraster aus dem Tecan-Export; erkennt automatisch
    normales Raster, transponiertes Raster und Listenformat (Wellnamen wie `A1`),
